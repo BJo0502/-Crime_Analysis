@@ -1,4 +1,10 @@
-# -Crime_Analysis
+# Federal Bureau of Investigation's Crime Data Explorer
+
+The FBI's Crime Data Explorer (CDE) aims to provide transparency, create easier access, and expand awareness of criminal, and noncriminal, law enforcement data sharing; improve accountability for law enforcement; and provide a foundation to help shape public policy with the result of a safer nation. Use the CDE to discover available data through visualizations, download data in .csv format, and other large data files.
+
+## Working Question:
+
+If an individual commits a crime against another person, who are they most likely to target based on the victim's gender, age, race, ethnicity, location, month, and time of day?
 
 ## Data Selection
 
@@ -38,7 +44,7 @@ The tables are intended to be used in a relational database
 Most of the categorical information has already been made numeric; therefore, many of the tables provided in the bulk download serve as lookup category tables
 
 The information is hierarchal in nature; however, there are a handful of tables that must be merged prior to the linkage to other, subsidiary tables of information
-
+![image](https://user-images.githubusercontent.com/88041368/146854072-ce907d84-a40b-4a51-9f3c-7164b4e57d3b.png)
 
 
 
