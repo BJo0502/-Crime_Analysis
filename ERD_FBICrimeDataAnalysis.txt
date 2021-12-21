@@ -1,0 +1,61 @@
+Arrestee
+-
+ARRESTEE_ID pk int 
+INCIDENT_ID fk int fk - Incident.INCIDENT_ID
+ARREST_DATE date
+ARREST_TYPE_ID fk int
+MULTIPLE_INDICATOR string
+OFFENSE_TYPE_ID fk int
+AGE_NUM int
+SEX_CODE string
+RACE_ID fk int
+ETHNICITY_ID fk int
+
+Incident
+-
+AGENCY_ID fk int
+INCIDENT_ID pk int 
+INCIDENT_DATE date
+INCIDENT_HOUR int
+CLEARED_EXCEPT_ID fk int
+
+Offense
+-
+OFFENSE_ID pk int
+INCIDENT_ID fk int fk - Incident.INCIDENT_ID
+OFFENSE_TYPE_ID fk int
+LOCATION_ID fk int
+
+Victim
+-
+VICTIM_ID pk int
+INCIDENT_ID fk int fk - Incident.INCIDENT_ID
+VICTIM_SEQ_NUM int
+VICTIM_TYPE_ID fk int
+AGE_NUM int
+SEX_CODE string
+RACE_ID fk int
+ETHNICITY_ID fk int
+
+Agencies
+-
+AGENCY_ID pk int
+INCIDENT_ID fk int fk - Incident.INCIDENT_ID
+DATA_YEAR date
+UCR_AGENCY_NAME string
+STATE_ID int
+AGENCY_TYPE fk int
+POPULATION int
+SUBURBAN_AREA_FLAG bool
+POPULATION_GROUP_CODE fk int
+MALE_OFFICER int
+FEMALE_OFFICER int
+COUNTY_NAME string
+
+Offense_Type
+-
+OFFENSE_TYPE_ID pk int fk - Offense.OFFENSE_TYPE_ID
+OFFENSE_NAME string
+CRIME_AGAINST string
+OFFENSE_CATEGORY_NAME string
+OFFENSE_GROUP string
