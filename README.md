@@ -27,4 +27,18 @@ Initial data processing completed to identify relevant information to explore:
 
 Read in csv files of interest, remove extra columns in each df that are not necessary for data analysis, remove records that have NaN values from each df, merge df’s to flatten the hierarchal data structure to allow for initial data exploration
 
+## Mockup Database
+
+Create table relationships:
+
+Data is published as several, separate tables of information
+
+The tables are intended to be used in a relational database
+
+Most of the categorical information has already been made numeric; therefore, many of the tables provided in the bulk download serve as lookup category tables
+
+The information is hierarchal in nature; however, there are a handful of tables that must be merged prior to the linkage to other, subsidiary tables of information
+
+
+
 
